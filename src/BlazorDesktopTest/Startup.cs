@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebviewAppTest;
 using WebviewAppTest.Data;
+using MudBlazor.Services;
 
 namespace BlazorDesktopTest
 {
@@ -29,6 +30,7 @@ namespace BlazorDesktopTest
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddMudServices();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<AppState>();
         }
